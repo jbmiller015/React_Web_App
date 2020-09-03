@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/React_Web_App/static/css/main.8d8996ea.chunk.css",
-    "main.js": "/React_Web_App/static/js/main.590a4131.chunk.js",
-    "main.js.map": "/React_Web_App/static/js/main.590a4131.chunk.js.map",
-    "runtime-main.js": "/React_Web_App/static/js/runtime-main.6c34b922.js",
-    "runtime-main.js.map": "/React_Web_App/static/js/runtime-main.6c34b922.js.map",
-    "static/css/2.11829350.chunk.css": "/React_Web_App/static/css/2.11829350.chunk.css",
-    "static/js/2.b6808754.chunk.js": "/React_Web_App/static/js/2.b6808754.chunk.js",
-    "static/js/2.b6808754.chunk.js.map": "/React_Web_App/static/js/2.b6808754.chunk.js.map",
-    "index.html": "/React_Web_App/index.html",
-    "precache-manifest.c8c6daa55c9ccbfbc89a92065ea78757.js": "/React_Web_App/precache-manifest.c8c6daa55c9ccbfbc89a92065ea78757.js",
-    "service-worker.js": "/React_Web_App/service-worker.js",
-    "static/css/2.11829350.chunk.css.map": "/React_Web_App/static/css/2.11829350.chunk.css.map",
-    "static/css/main.8d8996ea.chunk.css.map": "/React_Web_App/static/css/main.8d8996ea.chunk.css.map",
-    "static/js/2.b6808754.chunk.js.LICENSE.txt": "/React_Web_App/static/js/2.b6808754.chunk.js.LICENSE.txt",
-    "static/media/comingSoon.jpg": "/React_Web_App/static/media/comingSoon.a93a227b.jpg"
+    "main.css": "/static/css/main.8d8996ea.chunk.css",
+    "main.js": "/static/js/main.051ed1b0.chunk.js",
+    "main.js.map": "/static/js/main.051ed1b0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3639edcf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3639edcf.js.map",
+    "static/css/2.11829350.chunk.css": "/static/css/2.11829350.chunk.css",
+    "static/js/2.b6808754.chunk.js": "/static/js/2.b6808754.chunk.js",
+    "static/js/2.b6808754.chunk.js.map": "/static/js/2.b6808754.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.149f6ccfda0bf8c9f95b36369fe7b651.js": "/precache-manifest.149f6ccfda0bf8c9f95b36369fe7b651.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/static/css/2.11829350.chunk.css.map",
+    "static/css/main.8d8996ea.chunk.css.map": "/static/css/main.8d8996ea.chunk.css.map",
+    "static/js/2.b6808754.chunk.js.LICENSE.txt": "/static/js/2.b6808754.chunk.js.LICENSE.txt",
+    "static/media/comingSoon.jpg": "/static/media/comingSoon.a93a227b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6c34b922.js",
+    "static/js/runtime-main.3639edcf.js",
     "static/css/2.11829350.chunk.css",
     "static/js/2.b6808754.chunk.js",
     "static/css/main.8d8996ea.chunk.css",
-    "static/js/main.590a4131.chunk.js"
+    "static/js/main.051ed1b0.chunk.js"
   ]
 }
