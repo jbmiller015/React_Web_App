@@ -1,0 +1,28 @@
+.services {
+    text-align: center;
+    background-color: black;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.services h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: gold;
+    margin: 0;
+    padding: 0;
+}
+
+.services h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 48px;
+    padding: 0;
+}
+
+.services > .row {
+    display: flex;
+    justify-content: space-around;
+}

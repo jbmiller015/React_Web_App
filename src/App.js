@@ -1,18 +1,19 @@
 import React, {Component} from 'react';
 import './App.css';
-import Home from "./components/home";
-import Navbar from "./components/navbar";
+import Navigation from "./components/Navigation/Navigation";
+import Header from "./components/Header/Header";
+import Services from "./components/Services/Services";
 
 
 class App extends Component {
     render() {
         return (
-            <div className='App'>
-                <Navbar/>
-                <Home name='jbmiller'/>
+            <div>
+                <Navigation title="Portfolio"/>
+                <Header title="Jacob's Portfolio" buttonText="Find Out More"/>
+                <Services/>
             </div>
-        )
-        //return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Another Attempt'))
+        );
     }
 }
 
