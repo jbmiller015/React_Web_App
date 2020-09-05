@@ -1,18 +1,26 @@
 import React, {Component} from 'react';
+import {Redirect, Route, Switch} from 'react-router-dom';
 import './App.css';
-import Navigation from "./components/Navigation/Navigation";
-import Header from "./components/Header/Header";
-import Services from "./components/Services/Services";
+import Home from "./components/Screens/Home";
+import About from "./components/Screens/About";
+import Portfolio from "./components/Screens/Portfolio";
+import Contact from "./components/Screens/Contact";
+import NotFound from "./components/Screens/404";
 
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <Navigation title="Portfolio"/>
-                <Header title="Jacob's Portfolio" buttonText="Find Out More"/>
-                <Services/>
-            </div>
+            <main>
+                <Switch>
+                    <Route path="/" component={Home} exact/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/portfolio" component={Portfolio}/>
+                    <Route path="/contact" component={Contact}/>
+                    <Route path="/404" component={NotFound} exact/>
+                    <Redirect to="/404"/>
+                </Switch>
+            </main>
         );
     }
 }

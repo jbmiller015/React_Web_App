@@ -6,9 +6,14 @@ class Navigation extends Component {
     render() {
         const sections = ['Home', 'About', 'Portfolio', 'Contact'];
         const navLinks = sections.map(section => {
-            return (
-                <li><a href={'#' + section}> {section}</a></li>
-            )
+            if (section !== 'Home') {
+                return (
+                    <li><a href={'/' + section}> {section}</a></li>
+                )
+            } else
+                return (
+                    <li><a href={'/'}> {section}</a></li>
+                )
         });
         return (
             <nav>
