@@ -4,21 +4,15 @@ import './Navigation.css';
 
 class Navigation extends Component {
     render() {
-        const sections = ['home', 'about', 'portfolio', 'contact'];
-        const navLinks = sections.map(section => {
-            if (section !== 'home') {
-                return (
-                    <li><a href={'/' + section}> {section}</a></li>
-                )
-            } else
-                return (
-                    <li><a href={'/'}> {section}</a></li>
-                )
-        });
         return (
             <nav>
                 <h2 className="heading">{this.props.title}</h2>
-                <ul>{navLinks}</ul>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
             </nav>
         )
     }
