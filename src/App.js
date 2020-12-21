@@ -10,7 +10,7 @@ import NotFound from "./components/Screens/404";
 
 export default function App() {
     return (
-        <div>
+        <div id="Switch">
             <Switch>
                 <Route path="/" exact>
                     <Home/>
