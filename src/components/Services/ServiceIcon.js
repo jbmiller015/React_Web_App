@@ -1,11 +1,18 @@
 import React from "react";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {useHistory} from 'react-router-dom';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './ServiceIcon.css';
 
 
-const serviceIcon = (props) => {
+const ServiceIcon = (props) => {
+    const history = useHistory();
+
+    function handleClick() {
+        history.push("/" + props.page);
+    }
+
     return (
-        <div>
+        <div onClick={handleClick}>
             <span>
                 <FontAwesomeIcon icon={props.iconImage} color="white"/>
             </span>
@@ -15,4 +22,4 @@ const serviceIcon = (props) => {
     );
 }
 
-export default serviceIcon;
+export default ServiceIcon;

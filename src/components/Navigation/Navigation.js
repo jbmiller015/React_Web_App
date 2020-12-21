@@ -4,9 +4,9 @@ import './Navigation.css';
 
 class Navigation extends Component {
     render() {
-        const sections = ['Home', 'About', 'Portfolio', 'Contact'];
+        const sections = ['home', 'about', 'portfolio', 'contact'];
         const navLinks = sections.map(section => {
-            if (section !== 'Home') {
+            if (section !== 'home') {
                 return (
                     <li><a href={'/' + section}> {section}</a></li>
                 )

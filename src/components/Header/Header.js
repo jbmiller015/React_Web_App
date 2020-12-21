@@ -16,7 +16,7 @@ class Header extends Component {
             <header style={bImage}>
                 <h1>{this.props.title}</h1>
                 <p>A collection of projects and exercises</p>
-                <a href="#Button">{this.props.buttonText}</a>
+                <a href="/portfolio">{this.props.buttonText}</a>
             </header>
         );
     }

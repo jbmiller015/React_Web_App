@@ -10,10 +10,10 @@ class Services extends Component {
                 <h3>Services</h3>
                 <h2>What We Offer</h2>
                 <div className="row">
-                    <ServiceIcon iconImage={faRobot} title="Bender Rodgriguez" text="I am using these"/>
-                    <ServiceIcon iconImage={faRainbow} title="Tiny Rainbow" text="icons as a way"/>
-                    <ServiceIcon iconImage={faTree} title="Neatture" text="to teach myself"/>
-                    <ServiceIcon iconImage={faGhost} title="Spooky!" text="component reuse"/>
+                    <ServiceIcon iconImage={faRobot} page="portfolio" title="Bender Rodgriguez" text="I am using these"/>
+                    <ServiceIcon iconImage={faRainbow} page="portfolio" title="Tiny Rainbow" text="icons as a way"/>
+                    <ServiceIcon iconImage={faTree} page="portfolio" title="Neatture" text="to teach myself"/>
+                    <ServiceIcon iconImage={faGhost} page="portfolio" title="Spooky!" text="component reuse"/>
                 </div>
             </div>
         );
