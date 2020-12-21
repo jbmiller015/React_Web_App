@@ -13,11 +13,21 @@ class App extends Component {
         return (
             <main>
                 <Switch>
-                    <Route path="/" component={Home} exact/>
-                    <Route path="/about" component={About}/>
-                    <Route path="/portfolio" component={Portfolio}/>
-                    <Route path="/contact" component={Contact}/>
-                    <Route path="/404" component={NotFound} exact/>
+                    <Route path="/" exact>
+                        <Home/>
+                    </Route>
+                    <Route path="/about">
+                        <About/>
+                    </Route>
+                    <Route path="/portfolio">
+                        <Portfolio/>
+                    </Route>
+                    <Route path="/contact">
+                        <Contact/>
+                    </Route>
+                    <Route path="/404" exact>
+                        <NotFound/>
+                    </Route>
                     <Redirect to="/404"/>
                 </Switch>
             </main>
