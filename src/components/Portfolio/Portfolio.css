@@ -1,6 +1,14 @@
 .portfolio {
     text-align: center;
-    background-color: #BFE1A4;
+    background-color: #444444;
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.portfolio > .results {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
