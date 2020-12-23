@@ -1,5 +1,5 @@
-h4 {
-    color: white;
+.iconH4 {
+    color: #BFE1A4;
     margin-bottom: 8px;
     font-family: inherit;
     font-weight: 500;
@@ -7,13 +7,13 @@ h4 {
     font-size: 24px;
 }
 
-p {
+.iconP {
     color: white;
     font-size: 16px;
 }
 
-span {
-    background-color: darkgray;
+.iconSpan {
+    background-color: #cccccc;
     width: 112px;
     height: 112px;
     display: inline-block;

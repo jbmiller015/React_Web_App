@@ -1,21 +1,27 @@
 import React, {Component} from "react";
+import {slide as Menu} from 'react-burger-menu'
 import './Navigation.css';
 
 
 class Navigation extends Component {
+    showSettings(event) {
+        event.preventDefault();
+    }
+
     render() {
         return (
-            <nav>
-                <h2 className="heading">{this.props.title}</h2>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/portfolio">Portfolio</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
+            <Menu>
+                <a id="home" className="menu-item" href="/">Home</a>
+                <a id="services" className="menu-item" href="/#services">Services</a>
+                <a id="portfolio" className="menu-item" href="/#about">Portfolio</a>
+                <a id="Resume" className="menu-item" href="/#about">Resume</a>
+                <a id="Skills" className="menu-item" href="/#about">Skills</a>
+                <a id="contact" className="menu-item" href="/#contact">Contact</a>
+            </Menu>
         )
     }
 }
 
 export default Navigation;
+
+

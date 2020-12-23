@@ -1,29 +1,51 @@
-header {
-    margin: 0;
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    background-color: #cccccc;
     text-align: center;
+    vertical-align: middle;
 }
 
-header h1 {
+.header h1 {
     margin: 0;
-    padding-top: 150px;
     font-size: 4rem;
-    color: #282c34;
+    color: #BFE1A4;
 }
 
-header p {
-    font-weight: 700;
-    font-size: 1.75rem;
-    color: #282c34;
+.header h2 {
+    margin: 0;
+    color: #697B5A;
 }
 
-header a {
-    box-shadow: 0 3px 3px 0 black;
+.header p {
     font-weight: 700;
-    background-color: darkgray;
-    background-color: darkgray;
-    color: white;
-    padding: 1.25rem 2.5rem;
-    text-decoration: none;
-    border-radius: .25rem;
-    display: inline-block;
+    font-size: 1rem;
+    color: #282c34;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.header > .header-text {
+    margin-top: 20%;
+
+}
+
+.header > .header-text > .iconRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header > .header-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.header > .header-image img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
 }

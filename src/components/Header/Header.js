@@ -1,23 +1,31 @@
 import React, {Component} from "react";
-import Background from '../../assets/Profile_Pic.jpg';
+import profile from '../../assets/ProfilePicEmpty.png';
 import './Header.css';
+import SocialIcon from './SocialIcon.js'
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
-const bImage = {
-    backgroundImage: `url(${Background})`,
-    height: '80vh',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover'
-}
 
 class Header extends Component {
     render() {
         return (
-            <header style={bImage}>
-                <h1>{this.props.title}</h1>
-                <p>A collection of projects and exercises</p>
-                <a href="/portfolio">{this.props.buttonText}</a>
-            </header>
+            <div className="header">
+                <div className="header-text">
+                    <h2>Hello, World! My name is</h2>
+                    <h1>Jacob Miller</h1>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <div className="iconRow">
+                        <SocialIcon iconImage={faGithub} linkDest="https://www.linkedin.com/in/millerjacobb"/>
+                        <SocialIcon iconImage={faLinkedin} linkDest="https://github.com/jbmiller015"/>
+                    </div>
+                </div>
+                <div className="header-image">
+                    <img src={profile}/>
+                </div>
+            </div>
         );
     }
 }

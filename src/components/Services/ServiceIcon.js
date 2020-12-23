@@ -13,11 +13,11 @@ const ServiceIcon = (props) => {
 
     return (
         <div onClick={handleClick}>
-            <span>
-                <FontAwesomeIcon icon={props.iconImage} color="white"/>
+            <span className="iconSpan">
+                <FontAwesomeIcon icon={props.iconImage} color="#697B5A"/>
             </span>
-            <h4>{props.title}</h4>
-            <p>{props.text}</p>
+            <h4 className="iconH4">{props.title}</h4>
+            <p className="iconP">{props.text}</p>
         </div>
     );
 }

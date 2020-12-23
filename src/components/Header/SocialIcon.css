@@ -1,0 +1,11 @@
+.socialLink {
+    background-color: #cccccc;
+    display: inline-block;
+    margin: 15px;
+    font-size: 36px;
+}
+
+.socialLink > .iconImage:hover,
+.socialLink > .iconImage:focus {
+    color: #BFE1A4;
+}
