@@ -1,5 +1,5 @@
 import React from 'react';
-import {Redirect, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Redirect, Route} from 'react-router-dom';
 import './App.css';
 import Home from "./components/Screens/Home";
 import About from "./components/Screens/About";
@@ -11,24 +11,15 @@ import NotFound from "./components/Screens/404";
 export default function App() {
     return (
         <div id="Switch">
-            <Switch>
-                <Route path="/" exact>
-                    <Home/>
-                </Route>
-                <Route path="/about">
-                    <About/>
-                </Route>
-                <Route path="/portfolio">
-                    <Portfolio/>
-                </Route>
-                <Route path="/contact">
-                    <Contact/>
-                </Route>
-                <Route path="/404" exact>
-                    <NotFound/>
-                </Route>
-                <Redirect to="/404"/>
-            </Switch>
+            <BrowserRouter>
+                <div>
+                    <Route path="/" exact component={Home}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/portfolio" component={Portfolio}/>
+                    <Route path="/contact" component={Contact}/>
+                    <Route path="/404" exact component={NotFound}/>
+                </div>
+            </BrowserRouter>
         </div>
     );
 };
